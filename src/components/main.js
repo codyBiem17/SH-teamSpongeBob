@@ -31,10 +31,10 @@ const Main = () => {
           </form>
           <div id="google-langs">
               <span>Google Search in: </span>
-              <a href="hausa">Hausa </a>
-              <a href="igbo">Igbo </a>
-              <a href="yoruba">Ede Yoruba </a>
-              <a href="pidgin">Nigerian Pidgin </a>
+              <a href="#hausa">Hausa </a>
+              <a href="#igbo">Igbo </a>
+              <a href="#yoruba">Ede Yoruba </a>
+              <a href="#pidgin">Nigerian Pidgin </a>
 
           </div>
         </div>

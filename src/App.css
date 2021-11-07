@@ -173,7 +173,7 @@ div.carbon.show-xl{
 
 
 
-@media only screen and (min-width: 414px){
+@media only screen and (min-width: 375px){
   input#search-field{
     width: 250px;
   }
@@ -187,7 +187,6 @@ div.carbon.show-xl{
     width: 5%;
     position: absolute;
     top: 10px;
-    right: 7px;
   }
   div.flex-buttons{
     margin: 8px 10px;
@@ -199,7 +198,7 @@ div.carbon.show-xl{
     left: -20px;
   }
   footer.footer{
-    width: 430px;
+    width: 376px;
     left: -3px;
   }
   img#gcarbon{
