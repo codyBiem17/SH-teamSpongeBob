@@ -26,17 +26,17 @@ li.list-item-border:hover{
   background-color: #36373a
 }
 li.list-item-initial a{
-  font-size: 14px;
-  width: 5%;
+  font-size: 12px;
+  width: 4%;
   height: auto;
   padding: 5px;
   border-radius: 50%;
   background-color: #c2185b;
   position: relative;
-  top: 3px;
+  top: 2px;
 }
 img#app-drawer{
-  width: 5%;
+  width: 4%;
   height: auto;
   position: relative;
   top: 3px;
@@ -173,7 +173,7 @@ div.carbon.show-xl{
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 414px){
   input#search-field{
     width: 250px;
   }
@@ -205,6 +205,12 @@ div.carbon.show-xl{
   img#gcarbon{
     width: 3%;
     padding: 0 4px;
+  }
+  footer.footer{
+    position: absolute;
+    top: 92%;
+    height: 60px;
+
   }
 }
 
