@@ -1,38 +1,340 @@
-.App {
-  text-align: center;
+ul{
+  text-align: right;
+  margin-left: -5px;
+  width: 100%;
+}
+ul li{
+  display: inline;
+  margin-left: 5%;
+  color: white;
+  width: 25%;
+}
+li a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+li a.list-link-hover:hover{
+  text-decoration: underline;
+}
+li.list-item-border:hover{
+  /* border: 1px solid white; */
+  width: 15%;
+  height: auto;
+  padding: 7px 7px 10;
+  border-radius: 50%;
+  background-color: #36373a
+}
+li.list-item-initial a{
+  font-size: 14px;
+  width: 5%;
+  height: auto;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #c2185b;
+  position: relative;
+  top: 3px;
+}
+img#app-drawer{
+  width: 5%;
+  height: auto;
+  position: relative;
+  top: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Main styling */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.main-body{
+  margin: auto;
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  transform: translate(50%,-20%);
+}
+img#sh-icon{
+  width: 70%;
+  height: auto;
+}
+form{
+  position: relative;
+  width: 100%;
+  margin: 5px -45px;
+}
+input#search-field{
+  width: 220px;
+  margin: 5px auto;
+  padding: 2px 5px;
+  border: 1px solid #5f6368;
+  border-radius: 24px;
+  background-color: transparent;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+img#search-icon{
+  width: 8%;
+  height: auto;
+  position: absolute;
+  top: 9px;
+  left: 5px;
+}
+img#google-mic-icon{
+  width: 8%;
+  height: auto;
+  position: absolute;
+  top: 9px;
+  right: -15px;
+}
+div.flex-buttons{
+  margin: 8px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+button.buttons{
+  border-color: transparent;
+  border-radius:5px;
+  background-color: #303134;
+  color: white;
+  font-size: 10px;
+  margin: 5px 4px;
+  padding: 0 15px;
+  line-height: 27px;
+  height: 36px;
+  width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover{
+  border: 1px solid #5f6368;
+}
+button:first-child, button:last-child{
+  width: 50%;
+  padding: 0 5px;
+}
+div#google-langs{
+  width: 100%;
+  position: relative;
+  left: -30px;
+  font-size: 7px;
+}
+div#google-langs a{
+  text-decoration: none;
+  color: #8ab4f8;
+  padding: 0 3px;
+}
+div#google-langs a:hover{
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Footer styles*/
+footer.footer{
+  color: #889da2;
+  background-color: #171717;
+  position: absolute;
+  top: 89%;
+  left: 3px;
+  width: 320px;
+  height: 100px;
+  font-size: 8px;
+  /* padding: 20px; */
+}
+footer a, .carbon {
+  color: #889da2;
+  font-size: 0.3rem;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+#Nigeria{
+  padding: 8px 15px;
+  border-bottom: 1px solid rgba(136, 157, 162, 0.15);
+  color: rgba(255,255,255,.54);
+}
+footer div#second-div{
+  padding: 5px 15px;
+  text-align: center;
+}
+img#gcarbon{
+  width: 3%;
+  height: auto;
+  padding: 0 2px;
+}
+div#footer-links{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+div#footer-links .first-links a, div#footer-links .second-links a{
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+  ul li{
+    margin-left: 3%;
   }
-  to {
-    transform: rotate(360deg);
+  li.list-item-initial a{
+    width: 5%;
+    height: auto;
+    padding: 7px;
+    position: relative;
+    top: 3px;
+  }
+  form{
+    margin: 5px -85px;
+  }
+  input#search-field{
+    width: 500px;
+    padding: 10px 5px;
+  }
+  img#search-icon{
+    width: 5%;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  img#google-mic-icon{
+    width: 5%;
+    position: absolute;
+    top: 12px;
+    right: -25px;
+  }
+  div.flex-buttons{
+    margin: 8px 110px;
+    width: 280px;
+  }
+  button.buttons{
+    margin: 5px 7px;
+  }
+  div#google-langs{
+    font-size: 14px;
+    position: relative;
+    left: -15px;
+  }
+  footer.footer{
+    width: 765px;
+    height: 110px;
+    font-size: 0.8rem;
+  }
+  footer a, .carbon {
+    font-size: 0.6rem;
+  }
+  .carbon{
+    margin-top: 5px;
+  }
+  img#gcarbon{
+    width: 3%;
+    padding: 0 6px;
+  }
+  img#app-drawer{
+    width: 2%;
+    height: auto;
+    position: relative;
+    top: 3px;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  form{
+    margin: 10px -90px;
+  }
+  input#search-field{
+    width: 600px;
+    padding: 15px 5px;
+  }
+  img#search-icon{
+    width: 4%;
+    position: absolute;
+    top: 15px;
+  }
+  img#google-mic-icon{
+    width: 5%;
+    position: absolute;
+    top: 12px;
+    right: 50px;
+  }
+  div.flex-buttons{
+    margin: 8px 150px;
+  }
+  div#google-langs{
+    position: relative;
+    left: 20px;
+  }
+  footer.footer{
+    width: 1060px;
+    height: 130px;
+    font-size: 1rem;
+  }
+  div#footer-links{
+    justify-content: space-evenly;
+    margin: 10px 0;
+  }
+  footer a, .carbon {
+    font-size: 1rem;
+  }
+  .carbon{
+    margin: 10px 0 20px;
+  }
+  img#gcarbon{
+    width: 2%;
+    padding: 0 5px
+  }
+  div#footer-links .first-links a, div#footer-links .second-links a{
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  ul{
+    margin-left: -10px;
+  }
+  ul li{
+    margin-left: 1%;
+  }
+  input#search-field{
+    width: 720px;
+  }
+  img#search-icon{
+    width: 3%;
+    position: absolute;
+    top: 17px;
+  }
+  img#google-mic-icon{
+    width: 4%;
+    position: absolute;
+    top: 12px;
+    right: 60px;
+  }
+  div.flex-buttons{
+    margin: 8px auto;
+  }
+  div#google-langs{
+    position: relative;
+    left: 120px;
+  }
+  footer.footer{
+    width: 1285px;
+    position: absolute;
+    top: 78%;
+    left: -3px;
+  }
+  div#footer-links{
+    justify-content: space-evenly;
+    margin: 0px 0;
+  }
+  img#gcarbon{
+    width: 2%;
+    padding: 0 6px;
+  }
+  img#app-drawer{
+    width: 1%;
+    height: auto;
+    position: relative;
+    top: 3px;
   }
 }
