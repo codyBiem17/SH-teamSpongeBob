@@ -136,7 +136,6 @@ footer.footer{
   width: 320px;
   height: 100px;
   font-size: 8px;
-  /* padding: 20px; */
 }
 footer a, .carbon {
   color: #889da2;
@@ -168,10 +167,46 @@ div#footer-links .first-links a, div#footer-links .second-links a{
   padding: 0 5px;
   text-decoration: none;
 }
+div.carbon.show-xl{
+  display: none;
+}
 
 
 
-
+@media only screen and (max-width: 600px){
+  input#search-field{
+    width: 250px;
+  }
+  img#search-icon{
+    width: 5%;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+  }
+  img#google-mic-icon{
+    width: 5%;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+  }
+  div.flex-buttons{
+    margin: 8px 10px;
+    font-size: 8px;
+    width: 220px;
+  }
+  div#google-langs{
+    position: relative;
+    left: -20px;
+  }
+  footer.footer{
+    width: 430px;
+    left: -3px;
+  }
+  img#gcarbon{
+    width: 3%;
+    padding: 0 4px;
+  }
+}
 
 @media only screen and (min-width: 768px){
   ul li{
@@ -319,17 +354,27 @@ div#footer-links .first-links a, div#footer-links .second-links a{
   }
   footer.footer{
     width: 1285px;
+    height: 87px;
     position: absolute;
-    top: 78%;
+    top: 87%;
     left: -3px;
   }
   div#footer-links{
+    display: flex;
     justify-content: space-evenly;
     margin: 0px 0;
   }
+  div.carbon.show-xl{
+    display: inline-flex;
+  }
+  div.carbon.hide-xl{
+    display: none;
+  }
+  .first-links, .second-links{
+    margin-top: 10px;
+  }
   img#gcarbon{
-    width: 2%;
-    padding: 0 6px;
+    width: 10%;
   }
   img#app-drawer{
     width: 1%;

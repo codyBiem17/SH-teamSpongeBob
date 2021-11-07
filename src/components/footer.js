@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="footer">
             <div id="Nigeria">Nigeria</div>
             <div id="second-div">
-                <div className="carbon">
+                <div className="carbon hide-xl">
                     <img src={GCarbon} alt="google-carbon-icon" id="gcarbon" />
                     Carbon neutral since 2007
                 </div>
@@ -15,6 +15,10 @@ const Footer = () => {
                         <a href="advert">Advertising</a>
                         <a href="business">Business</a>
                         <a href="how">How Search Works</a>
+                    </div>
+                    <div className="carbon show-xl">
+                        <img src={GCarbon} alt="google-carbon-icon" id="gcarbon" />
+                        Carbon neutral since 2007
                     </div>
                     <div className="second-links">
                         <a href="privacy">Privacy</a>
